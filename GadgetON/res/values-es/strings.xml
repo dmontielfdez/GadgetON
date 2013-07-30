@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">GadgetON</string>
+    <string name="action_settings">Ajustes</string>
+    <string name="text_sign_up">Crear cuenta en GadgetON</string>
+    <string name="email">Email</string>
+    <string name="password">Contraseña</string>
+    <string name="login">Iniciar Sesión</string>
+    <string name="input_email">Introduzca email</string>
+    <string name="input_pwd">Introduzca contraseña</string>
+    <string name="connecting">Conectando&#8230;</string>
+    <string name="not_internet">Sin acceso a internet</string>
+    <string name="error_auth">Datos incorrectos, vuelva a intentarlo</string>
+    <string name="name">Nombre</string>
+    <string name="surname">Apellidos</string>
+    <string name="birthday">Fecha de Nacimiento</string>
+    <string name="address">Direccion</string>
+    <string name="province">Provincia</string>
+    <string name="postal_code">Código Postal</string>
+    <string name="phone">Telefono Móvil</string>
+    <string name="sign_up">Registrarse</string>
+    <string name="buy">Comprar</string>
+    <string name="details">Detalles</string>
+    <string name="stock">Stock</string>
+    <string name="quantity">Cantidad</string>
+    <string name="menu">Menú</string>
+    <string name="proceed">Finalizar pedido</string>
+    <string name="total">Total</string>
+    <string name="text_info_proceed">Sin contar gastos de envío</string>
+    <string name="categories">Categorías</string>
+    <string name="cart">Carrito</string>
+    <string name="profile">Mis datos</string>
+    <string name="orders">Mis pedidos</string>
+    <string name="support">Soporte</string>
+    <string name="logout">Salir</string>
+    <string name="search">Buscar</string>
+    <string name="cancel">Cancelar</string>
+    <string name="accept">Aceptar</string>
+    <string name="select_option">Seleccione una opción</string>
+    <string name="take_picture">Hacer foto</string>
+    <string name="pick_gallery">Seleccionar desde la galeria</string>
+    <string name="payment_method">Método de pago</string>
+    <string name="credit_card">Tarjeta de crédito</string>
+    <string name="paypal">PayPal</string>
+    <string name="summary">Resumen</string>
+    <string name="order">Pedido</string>
+    <string name="shipping_cost">Costes de envío</string>
+    <string name="checkout">Finalizar compra</string>
+    <string name="shipping_information">Datos de envío</string>
+    <string name="shipping_address">Dirección de envío</string>
+    <string name="highlighted_product">Producto destacado</string>
+    <string name="invoicing_information">Datos de facturación</string>
+    <string name="cc_saved">Tarjeta de crédito guardada</string>
+    <string name="cc_unsaved">Tarjeta de crédito no guardada</string>
+    <string name="no_products_found">Ningún producto encontrado</string>
+    <string name="processing_request">Realizando compra</string>
+    <string name="information_updated">Datos actualizados</string>
+    <string name="updating_failure">Fallo al actualizar</string>
+    <string name="email_already_signed">Email ya registrado</string>
+    <string name="make_sure_fill_field">Asegúrese de rellenar todos los campos</string>
+    <string name="cart_empty">El carrito esta vacío</string>
+    <string name="select_method_payment">Debe seleccionar un método de pago</string>
+    <string name="added_cart">Producto añadido al carrito</string>
+    <string name="no_products_found">No hay productos en esta categoría</string>
+    <string name="register">Registrando</string>
+    <string name="email_invalid">Email no válido</string>
+    <string name="id_order">ID pedido</string>
+    <string name="date">Fecha</string>
+    <string name="state">Estado</string>
+    <string name="products_in_order">Productos en el pedido</string>
+    <string name="latest_products">Novedades</string>
+    <string name="loading_product">Cargando producto</string>
+    <string name="share">Compartir</string>
+    <string name="contacto">Contacto</string>
+
+    <string-array name="quantity">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+    </string-array>
+    <string-array name="provinces">
+        <item>Álava</item>
+        <item>Albacete</item>
+        <item>Alicante</item>
+        <item>Almería</item>
+        <item>Ávila</item>
+        <item>Badajoz</item>
+        <item>Baleares (Illes)</item>
+        <item>Barcelona</item>
+        <item>Burgos</item>
+        <item>Cáceres</item>
+        <item>Cádiz</item>
+        <item>Castellón</item>
+        <item>Ciudad Real</item>
+        <item>Córdoba</item>
+        <item>A Coruña</item>
+        <item>Cuenca</item>
+        <item>Girona</item>
+        <item>Granada</item>
+        <item>Guadalajara</item>
+        <item>Guipúzcoa</item>
+        <item>Huelva</item>
+        <item>Huesca</item>
+        <item>Jaén</item>
+        <item>León</item>
+        <item>Lleida</item>
+        <item>La Rioja</item>
+        <item>Lugo</item>
+        <item>Madrid</item>
+        <item>Málaga</item>
+        <item>Murcia</item>
+        <item>Navarra</item>
+        <item>Ourense</item>
+        <item>Asturias</item>
+        <item>Palencia</item>
+        <item>Las Palmas</item>
+        <item>Pontevedra</item>
+        <item>Salamanca</item>
+        <item>Santa Cruz de Tenerife</item>
+        <item>Cantabria</item>
+        <item>Segovia</item>
+        <item>Sevilla</item>
+        <item>Soria</item>
+        <item>Tarragona</item>
+        <item>Teruel</item>
+        <item>Toledo</item>
+        <item>Valencia</item>
+        <item>Valladolid</item>
+        <item>Vizcaya</item>
+        <item>Zamora</item>
+        <item>Zaragoza</item>
+        <item>Ceuta</item>
+        <item>Melilla</item>
+    </string-array>
+
+    <!-- Card.io -->
+
+    <string name="cardioScanHintTop">Mantenga la tarjeta de crédito aquí.</string>
+    <string name="cardioScanHintBottom">Se escaneará automaticamente.</string>
+    <string name="cardioScanKeyboardButton">Introducir manualmente&#8230;</string>
+    <string name="cardioScanErrorLibLoadFail">Error al acceder a la cámara.</string>
+    <string name="cardioScanErrorNoDeviceSupport">This device cannot use the camera to read card numbers.</string>
+    <string name="cardioScanErrorCameraConnectFail">Cámara no disponible.</string>
+    <string name="cardioScanErrorUnexpectedCameraFail">Error al abrir la cámara.</string>
+    <string name="cardioScanErrorWhoops">Whoops! Tarjeta no leida.</string>
+    <string name="cardioScanErrorUnauthorized">"This app is not authorized to use card.io."</string>
+    <string name="cardioEntryCardNumber">Número de tarjeta</string>
+    <string name="cardioEntryExpiry">Válido hasta</string>
+    <string name="cardioEntryCVV">CVV</string>
+    <string name="cardioEntryZip">Zip</string>
+    <string name="cardioEntryZipHint">12345</string>
+    <string name="cardioConfirmButton">Confirmar</string>
+    <string name="cardioDoneButton">Hecho</string>
+    <string name="cardioCancelButton">Cancelar</string>
+    <string name="cardioWhoops">Whoops!</string>
+    <string name="cardioManualEntryTitle">Detalles de tarjeta</string>
+
+</resources>

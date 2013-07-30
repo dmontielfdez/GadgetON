@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory android:title="Servidor" >
+    </PreferenceCategory>
+
+    <EditTextPreference
+        android:dialogTitle="Direccion IP"
+        android:key="server_direction"
+        android:summary="Introduzca la dirección IP del servidor"
+        android:title="Direccion IP" />
+
+    <PreferenceCategory android:title="Notificaciones" >
+    </PreferenceCategory>
+
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="notification"
+        android:title="Promociones" android:disableDependentsState="false"/>
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:dependency="notification"
+        android:key="vibrator"
+        android:summary="Activa o desactiva la vibración en las notificaciones de promoción"
+        android:title="Vibracion" />
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:dependency="notification"
+        android:key="sound"
+        android:summary="Activa o desactiva el sonido en las notificaciones de promoción"
+        android:title="Sonido" />
+
+</PreferenceScreen>

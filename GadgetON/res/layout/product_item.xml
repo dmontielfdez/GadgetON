@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+    android:padding="5dp" >
+
+    <ImageView
+        android:id="@+id/image_product"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="4dp"
+        android:contentDescription="@+id/image_product"
+        android:focusable="false" />
+
+    <TextView
+        android:id="@+id/name_product"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/image_product"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="5dp"
+        android:layout_toLeftOf="@+id/rrp_product"
+        android:layout_toRightOf="@+id/image_product"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/rrp_product"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/name_product"
+        android:layout_marginRight="8dp"
+        android:textColor="@color/yellow_dark"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/sumary_product"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/name_product"
+        android:layout_alignRight="@+id/rrp_product"
+        android:layout_below="@+id/name_product"
+        android:layout_marginTop="4dp"
+        android:textSize="12sp" />
+
+    <ImageView
+        android:id="@+id/stock_product"
+        android:layout_width="50dp"
+        android:layout_height="12dp"
+        android:layout_alignBottom="@+id/text_stock"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="6dp"
+        android:layout_marginRight="8dp"
+        android:contentDescription="@+id/stock_product"
+        android:focusable="false" />
+
+    <TextView
+        android:id="@+id/text_stock"
+        android:layout_width="wrap_content"
+        android:layout_height="14dp"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/sumary_product"
+        android:layout_marginBottom="4dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginTop="8dp"
+        android:layout_toLeftOf="@+id/stock_product"
+        android:text="@string/stock"
+        android:textSize="12sp" />
+
+</RelativeLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Generated with http://android-holo-colors.com -->
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+  <style name="theme_green" parent="android:Theme.Light">
+
+    <item name="android:editTextStyle">@style/EditTexttheme_green</item>
+
+    <item name="android:autoCompleteTextViewStyle">@style/AutoCompleteTextViewtheme_green</item>
+
+    <item name="android:radioButtonStyle">@style/RadioButtontheme_green</item>
+
+    <item name="android:listViewStyle">@style/ListViewtheme_green</item>
+
+    <item name="android:listViewWhiteStyle">@style/ListViewtheme_green.White</item>
+
+    <item name="android:spinnerItemStyle">@style/SpinnerItemtheme_green</item>
+    
+     <item name="actionBarItemBackground">@drawable/selectable_background_mitheme</item>
+        <item name="popupMenuStyle">@style/PopupMenu.Mitheme</item>
+        <item name="dropDownListViewStyle">@style/DropDownListView.Mitheme</item>
+        <item name="actionBarTabStyle">@style/ActionBarTabStyle.Mitheme</item>
+        <item name="actionDropDownStyle">@style/DropDownNav.Mitheme</item>
+        <item name="actionBarStyle">@style/ActionBar.Solid.Mitheme</item>
+        <item name="actionModeBackground">@drawable/cab_background_top_mitheme</item>
+        <item name="actionModeSplitBackground">@drawable/cab_background_bottom_mitheme</item>
+        <item name="actionModeCloseButtonStyle">@style/ActionButton.CloseMode.Mitheme</item>
+
+  </style>
+
+</resources>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layout_widget"
+    android:background="@drawable/appwidget_bg_clickable"
+    android:padding="8dp" >
+
+    <TextView
+        android:id="@+id/title_widget"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/image_widget"
+        android:text="@string/highlighted_product"
+        android:textColor="#3E7B3E"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/name_widget"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/title_widget"
+        android:layout_alignRight="@+id/title_widget"
+        android:layout_below="@+id/title_widget"
+        android:layout_marginTop="4dp"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:textSize="12sp" />
+
+    <ImageView
+        android:id="@+id/image_widget"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="15dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/ic_launcher" />
+
+</RelativeLayout>

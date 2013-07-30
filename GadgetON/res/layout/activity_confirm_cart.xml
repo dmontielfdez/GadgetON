@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/base"
+        android:descendantFocusability="beforeDescendants"
+        android:focusableInTouchMode="true" >
+
+        <TextView
+            android:id="@+id/shipping_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:textColor="#3E7B3E"
+            android:text="@string/shipping_information"
+            android:textStyle="bold" />
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/shipping_details"
+            android:background="#aaa" />
+
+        <TextView
+            android:id="@+id/text_name_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/shipping_details"
+            android:layout_below="@+id/view1"
+            android:layout_marginTop="8dp"
+            android:text="@string/name"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/name_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/text_name_confirm"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/text_name_confirm"
+            android:layout_marginRight="8dp"
+             >
+        </TextView>
+
+        <TextView
+            android:id="@+id/text_surname_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/name_confirm"
+            android:layout_below="@+id/name_confirm"
+            android:layout_marginTop="8dp"
+            android:text="@string/surname"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/surname_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/text_surname_confirm"
+            android:layout_alignRight="@+id/name_confirm"
+            android:layout_below="@+id/text_surname_confirm"
+             >
+        </TextView>
+
+        <TextView
+            android:id="@+id/text_address_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/surname_confirm"
+            android:layout_below="@+id/surname_confirm"
+            android:layout_marginTop="8dp"
+            android:text="@string/shipping_address"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/address_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/text_address_confirm"
+            android:layout_alignRight="@+id/surname_confirm"
+            android:layout_below="@+id/text_address_confirm"
+            />
+
+        <TextView
+            android:id="@+id/text_province_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/address_confirm"
+            android:layout_below="@+id/address_confirm"
+            android:layout_marginTop="8dp"
+            android:text="@string/province"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/province_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/text_province_confirm"
+            android:layout_alignRight="@+id/address_confirm"
+            android:layout_below="@+id/text_province_confirm"
+             />
+
+        <TextView
+            android:id="@+id/text_phone_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/province_confirm"
+            android:layout_below="@+id/province_confirm"
+            android:layout_marginTop="8dp"
+            android:text="@string/phone"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/phone_confirm"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/text_phone_confirm"
+            android:layout_below="@+id/text_phone_confirm"
+             />
+
+        <TextView
+            android:id="@+id/text_postalcode_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/phone_confirm"
+            android:layout_alignBottom="@+id/text_phone_confirm"
+            android:layout_marginTop="8dp"
+            android:layout_toRightOf="@+id/phone_confirm"
+            android:text="@string/postal_code"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/postalcode_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/phone_confirm"
+            android:layout_alignBottom="@+id/phone_confirm"
+            android:layout_alignLeft="@+id/text_postalcode_confirm"
+            android:layout_alignRight="@+id/province_confirm"
+             />
+
+        <TextView
+            android:id="@+id/text_email_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/phone_confirm"
+            android:layout_below="@+id/phone_confirm"
+            android:layout_marginTop="8dp"
+            android:text="@string/email"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/email_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/text_email_confirm"
+            android:layout_alignRight="@+id/province_confirm"
+            android:layout_below="@+id/text_email_confirm"
+             />
+
+        <TextView
+            android:id="@+id/method_payment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/email_confirm"
+            android:layout_below="@+id/email_confirm"
+            android:layout_marginTop="8dp"
+            android:textColor="#3E7B3E"
+            android:text="@string/payment_method"
+            android:textStyle="bold" />
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/method_payment"
+            android:background="#aaa" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignLeft="@+id/method_payment"
+            android:layout_below="@+id/view2"
+            android:layout_marginTop="8dp" >
+
+            <RadioButton
+                android:id="@+id/credit_card_option"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/credit_card" />
+
+            <RadioButton
+                android:id="@+id/paypal_option"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/paypal" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/summary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/email_confirm"
+            android:layout_below="@+id/radioGroup"
+            android:layout_marginTop="8dp"
+            android:text="@string/summary"
+            android:textColor="#3E7B3E"
+            android:textStyle="bold" />
+
+        <View
+            android:id="@+id/view3"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/summary"
+            android:background="#aaa" />
+
+        <TextView
+            android:id="@+id/text_order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/summary"
+            android:layout_below="@+id/summary"
+            android:layout_marginTop="8dp"
+            android:text="@string/order" />
+
+        <TextView
+            android:id="@+id/text_shipping_cost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/text_order"
+            android:layout_below="@+id/text_order"
+            android:text="@string/shipping_cost"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/text_expenses"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/text_shipping_cost"
+            android:layout_below="@+id/text_shipping_cost"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/text_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/text_shipping_cost"
+            android:layout_below="@+id/text_expenses"
+            android:layout_marginTop="16dp"
+            android:text="@string/total"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/total_order_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/email_confirm"
+            android:layout_alignTop="@+id/text_order" />
+
+        <TextView
+            android:id="@+id/cost_shipping_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/total_order_confirm"
+            android:layout_alignTop="@+id/text_shipping_cost"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/total_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/cost_shipping_confirm"
+            android:layout_alignTop="@+id/text_total"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:id="@+id/confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/total_confirm"
+            android:layout_marginTop="8dp"
+            android:background="#333"
+            android:padding="8dp" >
+
+            <Button
+                android:id="@+id/confirm_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:background="#3E7B3E"
+                android:padding="4dp"
+                android:text="@string/checkout"
+                android:textColor="#fff"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/expenses"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/cost_shipping_confirm"
+            android:layout_alignTop="@+id/text_expenses"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+</ScrollView>

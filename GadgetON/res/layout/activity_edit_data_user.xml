@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:paddingBottom="16dp" >
+
+        <TextView
+            android:id="@+id/text_username_edit_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/name" />
+
+        <EditText
+            android:id="@+id/name_edit_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/text_username_edit_data"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/text_username_edit_data"
+            android:layout_marginRight="16dp"
+            android:inputType="textPersonName" >
+        </EditText>
+
+        <TextView
+            android:id="@+id/text_surname_edit_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/name_edit_data"
+            android:layout_below="@+id/name_edit_data"
+            android:layout_marginTop="8dp"
+            android:text="@string/surname" />
+
+        <EditText
+            android:id="@+id/surname_edit_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/text_surname_edit_data"
+            android:layout_alignRight="@+id/name_edit_data"
+            android:layout_below="@+id/text_surname_edit_data"
+            android:inputType="textPersonName" >
+        </EditText>
+
+        <TextView
+            android:id="@+id/text_birthday_edit_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/surname_edit_data"
+            android:layout_below="@id/surname_edit_data"
+            android:layout_marginTop="8dp"
+            android:text="@string/birthday" />
+
+        <EditText
+            android:id="@+id/birthday_edit_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/text_birthday_edit_data"
+            android:layout_alignRight="@+id/surname_edit_data"
+            android:layout_below="@+id/text_birthday_edit_data"
+            android:inputType="date" >
+        </EditText>
+
+        <TextView
+            android:id="@+id/text_address_edit_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/birthday_edit_data"
+            android:layout_below="@+id/birthday_edit_data"
+            android:layout_marginTop="8dp"
+            android:text="@string/address" />
+
+        <EditText
+            android:id="@+id/address_edit_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/text_address_edit_data"
+            android:layout_alignRight="@+id/birthday_edit_data"
+            android:layout_below="@+id/text_address_edit_data"
+            android:inputType="textPostalAddress" >
+        </EditText>
+
+        <TextView
+            android:id="@+id/text_province_edit_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/address_edit_data"
+            android:layout_below="@+id/address_edit_data"
+            android:layout_marginTop="8dp"
+            android:text="@string/province" />
+
+        <AutoCompleteTextView
+            android:id="@+id/province_edit_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/text_province_edit_data"
+            android:layout_alignRight="@+id/address_edit_data"
+            android:layout_below="@+id/text_province_edit_data"
+            android:inputType="text" />
+
+        <TextView
+            android:id="@+id/text_phone_edit_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/province_edit_data"
+            android:layout_below="@+id/province_edit_data"
+            android:layout_marginTop="8dp"
+            android:text="@string/phone" />
+
+        <EditText
+            android:id="@+id/phone_edit_data"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/text_phone_edit_data"
+            android:layout_below="@+id/text_phone_edit_data"
+            android:inputType="phone" />
+
+        <TextView
+            android:id="@+id/text_postalcode_edit_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/phone_edit_data"
+            android:layout_alignBottom="@+id/text_phone_edit_data"
+            android:layout_marginTop="8dp"
+            android:layout_toRightOf="@+id/phone_edit_data"
+            android:text="@string/postal_code" />
+
+        <EditText
+            android:id="@+id/postalcode_edit_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/phone_edit_data"
+            android:layout_alignBottom="@+id/phone_edit_data"
+            android:layout_alignLeft="@+id/text_postalcode_edit_data"
+            android:layout_alignRight="@+id/province_edit_data"
+            android:inputType="number" />
+
+        <TextView
+            android:id="@+id/text_email_edit_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/phone_edit_data"
+            android:layout_below="@+id/phone_edit_data"
+            android:layout_marginTop="8dp"
+            android:text="@string/email" />
+
+        <EditText
+            android:id="@+id/email_edit_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/text_email_edit_data"
+            android:layout_alignRight="@+id/province_edit_data"
+            android:layout_below="@+id/text_email_edit_data"
+            android:inputType="textEmailAddress" />
+
+        <TextView
+            android:id="@+id/text_password_edit_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/email_edit_data"
+            android:layout_below="@+id/email_edit_data"
+            android:layout_marginTop="8dp"
+            android:text="@string/password" />
+
+        <EditText
+            android:id="@+id/password_edit_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/text_password_edit_data"
+            android:layout_alignRight="@+id/email_edit_data"
+            android:layout_below="@+id/text_password_edit_data"
+            android:inputType="textPassword" />
+
+    </RelativeLayout>
+
+</ScrollView>
