@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory android:title="Servidor" >
+    </PreferenceCategory>
+
+    <EditTextPreference
+        android:dialogTitle="Direccion IP"
+        android:key="server_direction"
+        android:summary="Introduzca la dirección IP del servidor"
+        android:title="Direccion IP" />
+
+</PreferenceScreen>

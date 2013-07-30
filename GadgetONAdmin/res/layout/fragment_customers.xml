@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/base" >
+
+    <ImageButton
+        android:id="@+id/add_photo_user"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:background="#fff" />
+
+    <TextView
+        android:id="@+id/name_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/add_photo_user"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/add_photo_user"
+        android:textSize="18sp" />
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/data_user"
+        android:layout_marginTop="4dp"
+        android:background="#aaa" />
+
+    <TextView
+        android:id="@+id/data_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/add_photo_user"
+        android:layout_below="@+id/add_photo_user"
+        android:layout_marginTop="14dp"
+        android:text="Datos de facturación"
+        android:textColor="#3E7B3E"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/text_email_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/data_user"
+        android:layout_below="@+id/view1"
+        android:layout_marginTop="8dp"
+        android:text="Email"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/text_address_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/text_email_user"
+        android:layout_below="@+id/text_email_user"
+        android:layout_marginTop="8dp"
+        android:text="Direccion"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/email_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/text_address_user"
+        android:layout_marginLeft="4dp"
+        android:layout_toRightOf="@+id/text_email_user" />
+
+    <TextView
+        android:id="@+id/address_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/text_address_user"
+        android:layout_alignBottom="@+id/text_address_user"
+        android:layout_marginLeft="4dp"
+        android:layout_toRightOf="@+id/text_address_user" />
+
+    <TextView
+        android:id="@+id/text_province_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/text_address_user"
+        android:layout_below="@+id/text_address_user"
+        android:layout_marginTop="8dp"
+        android:text="Provincia"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/province_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/text_province_user"
+        android:layout_alignBottom="@+id/text_province_user"
+        android:layout_marginLeft="4dp"
+        android:layout_toRightOf="@+id/text_province_user" />
+
+    <TextView
+        android:id="@+id/text_orders_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/text_province_user"
+        android:layout_below="@+id/province_user"
+        android:layout_marginTop="24dp"
+        android:text="Pedidos"
+        android:textColor="#3E7B3E"
+        android:textStyle="bold" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/text_orders_user"
+        android:layout_marginTop="4dp"
+        android:background="#aaa" />
+
+    <ListView
+        android:id="@+id/listView_profile"
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/view2" >
+    </ListView>
+
+</RelativeLayout>

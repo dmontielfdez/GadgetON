@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+/*
+ * Copyright (C) 2012 Daniel Medina <http://danielme.com>
+ * 
+ * This file is part of "Android Dashboard UI Demoo".
+ * 
+ * "Android Dashboard UI Demo" is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, version 3.
+ *
+ * "Android Dashboard UI Demo" is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License version 3
+ * along with this program.  If not, see <http://www.gnu.org/licenses/gpl-3.0.html/>
+ */
+ -->
+ 
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dp" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/button1"
+                style="@style/dashboard_button"
+                android:drawableTop="@drawable/category"
+                android:onClick="clicked"
+                android:text="Categorias" />
+
+            <Button
+                android:id="@+id/button2"
+                style="@style/dashboard_button"
+                android:drawableTop="@drawable/product"
+                android:onClick="clicked"
+                android:text="Productos" />
+
+            <Button
+                android:id="@+id/button3"
+                style="@style/dashboard_button"
+                android:drawableTop="@drawable/order"
+                android:onClick="clicked"
+                android:text="Pedidos" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/button4"
+                style="@style/dashboard_button"
+                android:drawableTop="@drawable/user"
+                android:onClick="clicked"
+                android:text="Clientes" />
+
+            <Button
+                android:id="@+id/button5"
+                style="@style/dashboard_button"
+                android:drawableTop="@drawable/scanner"
+                android:onClick="clicked"
+                android:text="Escanear" />
+
+            <Button
+                android:id="@+id/button6"
+                style="@style/dashboard_button"
+                android:drawableTop="@drawable/logout"
+                android:onClick="clicked"
+                android:text="Salir" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

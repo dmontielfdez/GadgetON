@@ -1,0 +1,168 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="#e4e4e4"
+    android:padding="8dp"
+    android:paddingBottom="8dp" >
+
+    <TextView
+        android:id="@+id/details_order"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/text_id_order"
+        android:layout_alignParentTop="true"
+        android:text="Detalles del pedido"
+        android:textColor="#3E7B3E"
+        android:textStyle="bold" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/details_order"
+        android:background="#aaa" />
+
+    <TextView
+        android:id="@+id/text_id_order"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view2"
+        android:layout_marginTop="8dp"
+        android:text="ID pedido:"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/id_order"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/text_id_order"
+        android:layout_marginLeft="4dp"
+        android:layout_toRightOf="@+id/text_id_order"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/text_date_order"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/text_id_order"
+        android:layout_below="@+id/text_id_order"
+        android:layout_marginTop="4dp"
+        android:text="Fecha:"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/date_order"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/text_date_order"
+        android:layout_marginLeft="4dp"
+        android:layout_toRightOf="@+id/text_date_order"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/text_method_pay_order"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/text_date_order"
+        android:layout_below="@+id/text_date_order"
+        android:layout_marginTop="4dp"
+        android:text="Metodo de pago:"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/method_pay_order"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/text_method_pay_order"
+        android:layout_marginLeft="4dp"
+        android:layout_toRightOf="@+id/text_method_pay_order"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/text_customer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/text_total_order"
+        android:layout_below="@+id/text_method_pay_order"
+        android:layout_marginTop="4dp"
+        android:text="Cliente:"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/customer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/text_customer"
+        android:layout_marginLeft="4dp"
+        android:layout_toRightOf="@+id/text_customer"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/text_total_order"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/text_method_pay_order"
+        android:layout_below="@+id/text_customer"
+        android:layout_marginTop="4dp"
+        android:text="Total:"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/total_order"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/text_total_order"
+        android:layout_marginLeft="4dp"
+        android:layout_toRightOf="@+id/text_total_order"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/text_state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/states"
+        android:layout_alignLeft="@+id/text_total_order"
+        android:layout_marginTop="4dp"
+        android:text="Estado:"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/states"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_below="@+id/text_total_order"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="4dp"
+        android:layout_toRightOf="@+id/text_state" />
+
+    <TextView
+        android:id="@+id/text_products_order"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/text_total_order"
+        android:layout_below="@+id/states"
+        android:layout_marginTop="16dp"
+        android:text="Productos en el pedido"
+        android:textColor="#3E7B3E"
+        android:textStyle="bold" />
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/text_products_order"
+        android:background="#aaa" />
+
+    <ListView
+        android:id="@+id/listView_lines"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignLeft="@+id/view1"
+        android:layout_below="@+id/view1"
+        android:layout_marginTop="8dp" >
+    </ListView>
+
+</RelativeLayout>
